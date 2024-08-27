@@ -1,8 +1,8 @@
 //SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.19;
+pragma solidity ^0.8.18;
 
-import {PriceConverter} from "src/PriceConverter.sol";
+import {PriceConverter} from "./PriceConverter.sol";
 
 //you can send and receive money using smart contracts
 
