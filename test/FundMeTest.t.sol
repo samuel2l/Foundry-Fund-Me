@@ -15,10 +15,10 @@ function setUp()external{
 }
 //after deploying then you do your tests
 
-function testMinDollar()public{
+function testMinDollar()public view{
  assertEq(fundMe.minUsd(), 5e18);
 }
-function onlyOwnerWithdraws()public{
+function onlyOwnerWithdraws()public view{
     assertEq(fundMe.owner(), address(this));
     //reason to check addr of this FundMeTest instead of msg,sender is cos the FundMeTest deployed the FundMe contract
     //and remember our logic includes that the deployer is basically the owner you barb
